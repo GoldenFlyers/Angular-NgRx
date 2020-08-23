@@ -1,0 +1,28 @@
+<div class='table-responsive'>
+  <table class='table' *ngIf='countryDatas && countryDatas.length'>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Company</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let user of countryDatas'>
+          <td>{{ user.Country }}</td>
+          <td>{{ user.CountryCode }}</td>
+          <td>{{ user.Date}}</td>
+          <td>{{ user.NewConfirmed}}</td>
+          <td>{{ user.NewDeaths }}</td>
+          <td>{{ user.NewRecovered }}</td>
+          <td>{{ user.Slug}}</td>
+          <td>{{ user.TotalConfirmed}}</td>
+          <td>{{ user.TotalDeaths }}</td>
+          <td>{{ user.TotalRecovered }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
